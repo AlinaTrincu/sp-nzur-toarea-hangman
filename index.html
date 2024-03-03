@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en"> <!-- Deschide tag-ul de HTML cu specificarea limbii -->
+<head> 
+    <meta charset="UTF-8"> <!-- Setează setul de caractere la UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setează viewport-ul pentru dispozitive mobile -->
+    <title>Hangman Game JavaScript | CodingNepal</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <script src="word-list.js" defer></script> 
+    <script src="script.js" defer></script> 
+</head> 
+<body> 
+    <div class="game-modal"> <!-- Div pentru modalul jocului -->
+        <div class="content"> <!-- Div pentru conținutul modalului -->
+            <img src="#" alt="gif"> <!-- Imagine pentru rezultatul jocului -->
+            <h4>Game Over!</h4> <!-- Mesaj pentru încheierea jocului -->
+            <p>The correct word was: <b>rainbow</b></p> <!-- Mesaj care indică cuvântul corect -->
+            <button class="play-again">Play Again</button> <!-- Buton pentru a juca din nou -->
+        </div> <!-- Încheiere div content -->
+    </div> <!-- Încheiere div game-modal -->
+    <div class="container"> <!-- Div pentru a grupa conținutul principal al jocului -->
+        <div class="hangman-box"> <!-- Div pentru a afișa imaginea Spanzurătoare -->
+            <img src="images/hangman-0.svg" alt="hangman-img"> <!-- Imaginea Spanzurătoare -->
+            <h1>Hangman Game</h1> <!-- Titlul jocului -->
+        </div> <!-- Încheiere div hangman-box -->
+        <div class="game-box"> <!-- Div pentru a grupa componentele jocului -->
+            <ul class="word-display"></ul> <!-- Afișează cuvântul de ghicit -->
+            <h4 class="hint-text">Hint: <b></b></h4> <!-- Indiciu pentru cuvântul de ghicit -->
+            <h4 class="guesses-text">Incorrect guesses: <b></b></h4> <!-- Numărul de ghiciri greșite -->
+            <div class="keyboard"></div> <!-- Afișează tastatura virtuală -->
+        </div> <!-- Încheiere div game-box -->
+    </div> <!-- Încheiere div container -->
+</body> 
+</html>
